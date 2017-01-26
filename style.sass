@@ -1,0 +1,416 @@
+$fontis:    Helvetica, sans-serif
+$blue: #057095
+$grey: #eeeeee
+
+.primaryfont
+	font-family: 'Open Sans', sans-serif
+	font-weight: 700
+	font-style: italic
+
+// __________________________________________________________
+html 
+	height: 100%
+
+p
+	margin: 0 !important
+
+*
+	padding: 0
+	margin: 0
+
+html, body
+	min-height: 100% !important
+	height: 100%
+
+body
+	background: $grey !important
+
+header
+	position: fixed
+	top: 0
+	right: 0
+	left: 0
+	z-index: 19999999
+
+.navbar
+	margin-bottom: 0 !important
+
+.navbar-default
+	background-color: #fff !important
+	height: 67px
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a
+	box-shadow: none !important
+	-webkit-box-shadow: none !important
+	background-image: -webkit-gradient(linear,left top,left bottom,from($grey),to($grey)) !important
+
+.navbar-nav>li>a
+	padding-top: 23px !important
+	padding-bottom: 23px !important
+	@extend .primaryfont
+	color: $blue !important
+
+.left-nav
+	position: fixed
+	max-height: 100%
+	height: 100%
+	background-color: $blue
+	margin-top: 67px
+
+.touggle-menu
+	cursor: pointer
+
+.acc-img img
+	width: 32px
+	max-height: 32px
+	padding-right: 10px 
+
+
+ul.nav.nav-tabs.tabs-left 
+	padding-left: 5px
+	li>a
+		color: white
+		@extend .primaryfont
+		text-align: center
+	li>a:hover
+		color: $blue
+	li.active>a
+		color: $blue
+		background-color: $grey !important
+	.glyphicon
+		display: block
+		font-size: 27px
+		text-align: center
+		padding-bottom: 5px
+
+.glyphicon-asterisk:before
+	font-size: 32px
+
+.tabs-left 
+	border-right: inherit !important
+	li
+		padding-bottom: 15px
+
+.selection-container 
+	width: 114px
+	height: 141px
+	background-color: white
+	float: left
+	margin-left: 14px
+	margin-right: 14px
+	margin-bottom: 44px
+
+.selection-container:nth-child(4n)
+	margin-right: 0
+
+.selection-container:nth-child(5), .selection-container:first-child, .selection-container:nth-child(9), .selection-container:nth-child(13)
+	margin-left: 0
+
+.img-container
+	padding: 7px
+	height: 107px
+	display: table
+
+.selection-container:hover
+	box-shadow: 6px 6px 13px #ccc
+
+.img-container img
+	max-width: 100px
+	max-height: 94px
+	vertical-align: middle
+
+.img-container span
+	display: table-cell
+	vertical-align: middle
+
+.title-container
+	background: $blue
+	padding: 7px 5px
+	height: auto
+
+.title-container p
+	color: white
+	display: inline-block
+	@extend .primaryfont
+	font-size: 14px
+	max-width: 85px
+	word-break: break-word
+
+.title-container span
+	color: white
+	float: right
+	font-size: 14px
+
+.box-options
+	float: right
+
+.title-container .dropdown-menu
+	min-width: 116px
+	padding: 2px 0
+	margin: 5px -104px 0px
+
+.page-container
+	margin-top: 86px
+
+.tab-forward
+	font-size: 31px
+	float: right
+	color: $blue
+
+.tab-add-new
+	font-size: 31px
+	float: left
+	color: $blue
+
+.aktive .img-container
+	outline-style: solid 
+	outline-color: $blue
+	box-shadow: 6px 6px 13px #ccc
+	width: 114px
+
+.add-go
+	display: block
+	clear: both
+
+.lloji-title-container li
+	background-color: white
+	width: 273px
+	height: 50px
+	padding: 11px
+	margin-bottom: 5px
+
+.lloji-title-container li
+	list-style: none
+
+.lloji-title-container li span
+	float: right
+	line-height: 28px
+	@extend .primaryfont
+
+.lloji-title-container li i
+	float: right
+	line-height: 28px
+
+.lloji-title-container li
+	position: relative
+	display: inline-block
+
+.lloji-dropdown
+	opacity: 0
+	position: absolute
+	left: 277px
+	top: 0
+	transition: opacity linear 0.15s
+	z-index: -1
+
+.lloji-title-container li:hover .lloji-dropdown
+	opacity: 1
+	z-index: 1
+
+// .vertical
+// 	-ms-transform: rotate(90deg) // IE 9
+// 	-webkit-transform: rotate(90deg) // Chrome, Safari, Opera
+// 	transform: rotate(90deg)
+// 	position: relative
+// 	top: -214px
+// 	left: 232px
+
+
+// touggle-menu
+.touggle-menu
+	float: left
+	margin-top: 24px
+	margin-left: 4px
+	font-size: 17px
+	color: #c9c9c9
+
+@media screen and (min-width: 768px)
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand
+	margin-left: 4px !important
+
+
+/*Modal*/
+.modal 
+	top: 50px !important
+
+
+// _______________________________________________________
+				Right site tabs
+// _______________________________________________________
+
+.perfundo-btn
+	border-radius: 5px
+	background-color: rgb(5, 112, 149)
+	float: right
+	width: 213px
+	height: 37px
+	background-image: none !important
+	font-size: 18px !important
+
+.perfundo-btn i
+	float: left
+	padding-top: 1px
+
+.panel-group
+	float: none
+	margin-top: 50px
+
+.windos-icon3
+	background-image: url('img/icons/window-icon3.png')
+	width: 46px
+	height: 28px
+	display: block
+	float: left
+	margin-right: 12px
+
+.panel-title
+	display: inline-block
+
+.driapp-right .panel-title a
+	color: $blue
+	font-weight: 700
+
+.driapp-right .panel-title span
+	color: #ccc
+	font-weight: normal
+	font-size: 12px
+
+.shuma
+	width: 68px !important
+	float: right
+
+.close-dritapp-right-tab
+	position: relative
+	top: -52px
+	left: -8px
+	float: right
+
+.panel-heading
+	padding: 12px 15px 8px !important
+	background-image: none !important
+
+.table-dritapp-right td
+	color: $blue
+	font-weight: 700
+	
+.table-dritapp-right tr td
+	border-top: none !important
+
+.table-dritapp-right td span
+	color: #ccc
+	font-weight: normal
+
+
+// madhesia rang slider
+
+.rangeslider,
+.rangeslider__fill
+	display: block
+	-moz-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3)
+	-webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3)
+	box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3)
+	-moz-border-radius: 10px
+	-webkit-border-radius: 10px
+	border-radius: 10px
+
+.rangeslider 
+	background: #e6e6e6
+	position: relative
+
+
+.rangeslider--horizontal 
+	height: 20px
+	width: 80%
+
+
+.rangeslider--vertical 
+	width: 20px
+	min-height: 330px
+	float: right
+	max-height: 100%
+	margin-top: -436px
+
+
+.rangeslider--disabled 
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40)
+	opacity: 0.4
+
+
+.rangeslider__fill 
+	background: #00ff00
+	position: absolute
+
+.rangeslider--horizontal .rangeslider__fill 
+	top: 0
+	height: 100%
+
+.rangeslider--vertical .rangeslider__fill 
+	bottom: 0
+	width: 100%
+
+
+.rangeslider__handle 
+	background: white
+	border: 1px solid #ccc
+	cursor: pointer
+	display: inline-block
+	width: 40px
+	height: 40px
+	position: absolute
+	background-image: url('data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4xIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g')
+	background-size: 100%
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(0, 0, 0, 0.1)))
+	background-image: -moz-linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.1))
+	background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.1))
+	background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.1))
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3)
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3)
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.3)
+	-moz-border-radius: 50%
+	-webkit-border-radius: 50%
+	border-radius: 50%
+
+.rangeslider__handle:after 
+	content: ""
+	display: block
+	width: 18px
+	height: 18px
+	margin: auto
+	position: absolute
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	background-image: url('data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjEzIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==')
+	background-size: 100%
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.13)), color-stop(100%, rgba(255, 255, 255, 0)))
+	background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.13), rgba(255, 255, 255, 0))
+	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.13), rgba(255, 255, 255, 0))
+	background-image: linear-gradient(rgba(0, 0, 0, 0.13), rgba(255, 255, 255, 0))
+	-moz-border-radius: 50%
+	-webkit-border-radius: 50%
+	border-radius: 50%
+
+.rangeslider__handle:active 
+	background-image: url('data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjEiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4xMiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==')
+	background-size: 100%
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(100%, rgba(0, 0, 0, 0.12)))
+	background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.12))
+	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.12))
+	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.12))
+
+.rangeslider--horizontal .rangeslider__handle 
+	top: -10px
+	touch-action: pan-y
+	-ms-touch-action: pan-y
+
+.rangeslider--vertical .rangeslider__handle 
+	left: -10px
+	touch-action: pan-x
+	-ms-touch-action: pan-x
+
+
+input[type="range"]:focus + .rangeslider .rangeslider__handle 
+	-moz-box-shadow: 0 0 8px rgba(255, 0, 255, 0.9)
+	-webkit-box-shadow: 0 0 8px rgba(255, 0, 255, 0.9)
+	box-shadow: 0 0 8px rgba(255, 0, 255, 0.9)
